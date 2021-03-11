@@ -24,10 +24,11 @@ exports.login = function (req, res) {
 
         // If the login credentials match the data records, generate & return a JSON Web Token for the user
         if (user) {
-            logger.info(user.name + " logged in!");
-
             // Generate the JWT for the user's future Admin requests
             const token = jwt.sign({ roles: 'ADMIN', name: user.name }, process.env.JWT);
+            if (token) {
+                logger.info(user.name + " logged in!");
+            }
             return res.status(200).json({
                 message: 'Success',
                 token: token

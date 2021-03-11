@@ -2,7 +2,7 @@ let express = require('express');
 let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
 let logger = require('./logger/logger');
-let dotenv = require('dotenv');
+require('dotenv').config({path: '.env'})
 let cors = require('cors');
 let app = express();
 
