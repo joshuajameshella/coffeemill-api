@@ -1,0 +1,25 @@
+{
+  "name": "coffeemill-api",
+  "version": "1.0.0",
+  "description": "MongoDB API for Coffee Mill & Cakes Webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh Hellawell",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.852.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.15",
+    "node-cache": "^5.1.2",
+    "nodemailer": "^6.5.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
